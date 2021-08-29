@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  postgres:
+    build: postgres
+    ports:
+      - "${DB_PORT}:5432"
+    env_file:
+      - ./postgres/.env
+    environment:
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - /var/lib/postgresql/data
+      - ./local/docker/psql/bkp:/backup
+    restart: ${DOCKER_RESTART:-no}
