@@ -6,6 +6,9 @@ This project implements a simple database, to be evaluated in database exam 2.
 - Docker + docker-compose
 - PostgreSQL
 
+# Prerequisite
+- Docker installed
+
 # Running locally
 ```
 $ make build
