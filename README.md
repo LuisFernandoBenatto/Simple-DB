@@ -20,7 +20,7 @@ $ make create-tables
 
 `psql dummydb -U postgres`
 
-```
+```sql
 CREATE TABLE "User" (
     user_id INT PRIMARY KEY,
     type VARCHAR (50) NOT NULL,
